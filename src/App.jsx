@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     const loadTimer = setTimeout(() => setLoading(false), 4000);
     const connectShowTimer = setTimeout(() => setShowConnect(true), 15000);
-    const connectHideTimer = setTimeout(() => setShowConnect(false), 20000);
+    const connectHideTimer = setTimeout(() => setShowConnect(false), 25000);
 
     return () => {
       clearTimeout(loadTimer);
@@ -64,6 +64,7 @@ function App() {
                     <Skills /> 
                      <Projects /> 
                      <Testimonials />
+                     <Contact/>
                   </div>
                 </Layout>
               }
